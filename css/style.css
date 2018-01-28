@@ -1,0 +1,274 @@
+/*
+   Primary Color #E67C59
+   Light Gray  #9EA2A6
+   Dark Black #000002
+    */
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #E67C59;
+    font-family: 'Amiko', sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    color: #000002;
+}
+
+
+
+/* Utilities
+******************************************************/
+
+.accessible-hidden {
+    position: absolute;
+    top: 0;
+    left: -999px;
+    height: 1px;
+    width: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+
+/*.....Logo Link....*/
+
+.headerlogo {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+/*.........Immage and img-message......*/
+
+div.image-message {
+    width: 1200px;
+    height: 900px;
+}
+
+
+.img-message {
+    display: block;
+    background-image: url(/portfolio/images/heroimage.jpg);
+    background-repeat: no-repeat;
+    height: 800px;
+    }
+
+.img-message-text{
+
+}
+
+.img-message-text h1{
+    color: #E67C59;
+    text-align: left;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    padding-left: 40%
+}
+
+.img-message-text h2{
+    color: #E67C59;
+
+    text-align: left;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    padding-left: 40%;
+}
+
+.img-message-text p{
+    color: azure;
+
+    text-align: left;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    padding-left: 40%;
+    padding-right: 10%;
+}
+
+
+
+
+/* promo*/
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.project {
+    flex: 1 1 50%;
+    flex: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+
+.bottomclaim {
+    background-color: #000002;
+}
+
+.bottomclaim p {
+    color: azure;
+}
+
+
+/*.....Navigation...*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+header nav {
+    height: 50px;
+}
+
+nav {
+    color: azure;
+    background-color: azure;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 30px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+nav a {
+    display: flex;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border: 1px solid #000002;
+    border-right: none;
+    width: 100%;
+    height: 50px;
+    white-space: nowrap;
+}
+
+nav li:last-child a {
+    border-right: 1px solid  #000002;
+}
+
+nav li {
+    flex: 1;
+    display: flex;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: aquamarine;
+}
+
+/* ....End of the Navigation*/
+
+.multi-text {
+    background-color: #000002;
+    color: azure
+}
+
+.headings {
+    background-color: #9EA2A6;
+}
+
+.project {
+    background-color: azure;
+    border-color: #000002;
+}
+
+.project {
+    text-align: center;
+    font-weight: bold;
+}
+
+.project p {
+    text-align: left;
+    font-weight: normal;
+    color: azure;
+    background-color: #000002;
+}
+
+.icons {
+    background-color: #000002;
+    color: azure;
+}
+
+.icons h2 {
+    color: azure;
+}
+
+.form {
+    background-color: #9EA2A6
+}
+
+
+/*.... about section.....*/
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1 1 300px;
+    margin: 2rem;
+}
+
+.about-text {
+    flex: 1 0 300px;
+    max-width: 100%;
+    padding: 0 2rem;
+}
+
+.headings {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* ....media query to allow for flexible layout....*/
+
+@media only screen and (min-width:500px) {
+    .headings article {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    .headings article {
+         width: 25%;
+    }
+}
+
+
+.headings article {
+    max-width: 100%;
+}
+
+
+.headings article p {
+    color: azure;
+    background-color: #000002;
+    margin: 0 10px;
+}
