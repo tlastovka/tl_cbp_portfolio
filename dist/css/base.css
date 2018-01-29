@@ -1,0 +1,93 @@
+/*...Untilites....*/
+.accessible-hidden {
+  position: absolute;
+  top: 0;
+  left: -999px;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; }
+
+/*.....General Styling......*/
+body {
+  background-color: #e67c59;
+  max-width: 1000px;
+  margin: auto; }
+
+/*.....Specific Styling......*/
+.nav-link {
+  width: 150px;
+  justify-content: center;
+  color: #000002;
+  align-items: center;
+  align-content: center;
+  padding-left: 1px;
+  margin: 1px; }
+
+.hitext {
+  margin-left: 50%;
+  padding: 10px;
+  color: #e67c59;
+  align-content: left; }
+
+.devaid {
+  margin-left: 50%;
+  padding: 10px; }
+
+.philo {
+  margin-left: 50%;
+  padding: 10px; }
+
+.progress {
+  border: solid 1px;
+  border-color: black; }
+
+h2.skill {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center; }
+
+h2.ideo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center; }
+
+h2.ptf {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center; }
+
+h2.me {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center; }
+
+h2.find {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white; }
+
+.icons_pic {
+  display: flex;
+  height: 100px;
+  justify-content: space-around; }
+
+h2.cont_fm {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white; }
+
+label {
+  color: white;
+  margin-left: 30%; }
+
+input {
+  display: flex;
+  margin-left: 50%;
+  margin-bottom: 10px; }
+
+footer {
+  display: flex;
+  justify-content: center; }
